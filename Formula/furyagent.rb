@@ -2,23 +2,23 @@
 class Furyagent < Formula
   desc "Fury Agent binary"
   homepage ""
-  version "0.0.2-rc11"
+  version "0.0.2-rc12"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/sighupio/furyagent/releases/download/v0.0.2-rc11/furyagent-darwin-amd64.tar.gz"
-    sha256 "7087df4488faa2c9c4a47ac8f91be7a5a94242fde9956f1402b0be0571be95ec"
+    url "https://github.com/sighupio/furyagent/releases/download/v0.0.2-rc12/furyagent-darwin-amd64.tar.gz"
+    sha256 "35cdcc1f28802fbb5e180a0f83a139c65e3e92d503a0ab79e444e1bbd03c5a90"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/sighupio/furyagent/releases/download/v0.0.2-rc11/furyagent-linux-amd64.tar.gz"
-      sha256 "dd1028e6749f42a5e9be7c9fe8dbe06983adcbb4c015a4d148b20cdae85d9961"
+      url "https://github.com/sighupio/furyagent/releases/download/v0.0.2-rc12/furyagent-linux-amd64.tar.gz"
+      sha256 "642d6921b0eefae7fb922960aa56fd6eb76f954d795fe8a005ca2f601ac3bcf0"
     end
   end
   
   conflicts_with "furyagent"
 
   def install
-    bin.install 'furyagent-darwin-amd64'
+    bin.install 'furyagent'
   end
 
   test do
