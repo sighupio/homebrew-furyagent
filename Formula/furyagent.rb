@@ -2,16 +2,16 @@
 class Furyagent < Formula
   desc "Fury Agent binary"
   homepage "https://gihub.com/sighupio/furyagent"
-  version "0.2.0"
+  version "0.2.1"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/sighupio/furyagent/releases/download/v0.2.0/furyagent-darwin-amd64.tar.gz"
-    sha256 "0ab8930f6bb9457a5a607821f97b2b3b4c40484a5a33c4768a3259674278afa0"
+    url "https://github.com/sighupio/furyagent/releases/download/v0.2.1/furyagent-darwin-amd64.tar.gz"
+    sha256 "98f56e53e73353551a05f7d40996c5a74315b077d32c877be51cc2ceadaff7d1"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/sighupio/furyagent/releases/download/v0.2.0/furyagent-linux-amd64.tar.gz"
-      sha256 "d9cc91cae88a2c5162fa8532fb388cd12a1e8f3c9507c3bdaa5390fb3908df12"
+      url "https://github.com/sighupio/furyagent/releases/download/v0.2.1/furyagent-linux-amd64.tar.gz"
+      sha256 "64a445dcb718e310c7241d6e3c825399f90ae794f334942802c14abc5028c834"
     end
   end
   
