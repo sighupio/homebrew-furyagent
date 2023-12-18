@@ -5,20 +5,20 @@
 class Furyagent < Formula
   desc "Furyagent binary"
   homepage "https://gihub.com/sighupio/furyagent"
-  version "0.3.0"
+  version "0.4.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/sighupio/furyagent/releases/download/v0.3.0/furyagent-darwin-arm64.tar.gz"
-      sha256 "24d8f4f60df7a7bffc755453488cc3abfe4636b2f73068fa101bd718fad2ae39"
+      url "https://github.com/sighupio/furyagent/releases/download/v0.4.0/furyagent-darwin-arm64.tar.gz"
+      sha256 "cdcfa9dd713bc0a72cf490a9b51746f72684c4cf6fdd54ce28f811dd051a5502"
 
       def install
         bin.install 'furyagent'
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/sighupio/furyagent/releases/download/v0.3.0/furyagent-darwin-amd64.tar.gz"
-      sha256 "8ee4c6e57dce57325226e5b7db712f204330e04b0d8327ddf74cd2e44c0d9ebe"
+      url "https://github.com/sighupio/furyagent/releases/download/v0.4.0/furyagent-darwin-amd64.tar.gz"
+      sha256 "967a2e72a1e90e20008c6a6dc6043b55d8a0d04b515ad8ecf06ab1e65e876431"
 
       def install
         bin.install 'furyagent'
@@ -28,16 +28,16 @@ class Furyagent < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/sighupio/furyagent/releases/download/v0.3.0/furyagent-linux-arm64.tar.gz"
-      sha256 "e8a1347504f752f0bc704f7d21cacd5e668bc8cb47b59b5352de49e982bbcf25"
+      url "https://github.com/sighupio/furyagent/releases/download/v0.4.0/furyagent-linux-arm64.tar.gz"
+      sha256 "44c83142168f62b72c05d0d3f99a65d2e297cfc2ab2d97f501b3d20a86b69a08"
 
       def install
         bin.install 'furyagent'
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/sighupio/furyagent/releases/download/v0.3.0/furyagent-linux-amd64.tar.gz"
-      sha256 "3818b245778fc5fb89be073d63c39ba290dfccaee87c8ae9d1b95c928fb4775e"
+      url "https://github.com/sighupio/furyagent/releases/download/v0.4.0/furyagent-linux-amd64.tar.gz"
+      sha256 "3b01d253d1930b647072e9290fa12064e6528f04486be03a8763d608b36ad8b4"
 
       def install
         bin.install 'furyagent'
